@@ -50,10 +50,10 @@ patch:
       horizontal: true
       candidate_format: "%c %@ "
       corner_radius: 8
-      hilited_corner_radius: 6
-      line_spacing: 10
-      border_height: 4
-      border_width: 4
+      hilited_corner_radius: 4
+      line_spacing: 4
+      border_height: 1
+      border_width: 2
       font_face: "PingFangSC"
       font_point: 13
       label_font_point: 13
