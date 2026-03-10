@@ -21,8 +21,8 @@ patch:
     # color_scheme_dark: purity_of_form_custom
     # color_scheme: macos_light
     # color_scheme_dark: macos_dark
-    color_scheme: mac_light
-    color_scheme_dark: mac_dark
+    color_scheme: soft_dark
+    color_scheme_dark: soft_dark
 
     # 预设选项：（可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。）
     text_orientation: horizontal # horizontal | vertical
@@ -45,6 +45,32 @@ patch:
 
   # 皮肤列表
   preset_color_schemes:
+    soft_dark:
+      name: 柔和深色
+      horizontal: true
+      candidate_format: "%c %@ "
+      corner_radius: 8
+      hilited_corner_radius: 6
+      line_spacing: 10
+      border_height: 4
+      border_width: 4
+      font_face: "PingFangSC"
+      font_point: 13
+      label_font_point: 13
+      comment_font_point: 13
+      text_color: 0xB8B8B8
+      back_color: 0x181818
+      border_color: 0x181818
+      label_color: 0x8D8D8D
+      candidate_text_color: 0xD6D6D6
+      comment_text_color: 0x8D8D8D
+      hilited_text_color: 0xDCDCDC
+      hilited_back_color: 0x181818
+      hilited_candidate_text_color: 0xF2F2F2
+      hilited_candidate_label_color: 0xC8C8C8
+      hilited_candidate_back_color: 0x2A2A2A
+      hilited_comment_text_color: 0xA8A8A8
+
     macos_light:
       name: "MacOS 浅色／MacOS Light"
       author: 小码哥
