@@ -1,0 +1,6 @@
+# Rime schema
+# encoding: utf-8
+
+patch:
+  # 保留原始双拼编码，不在输入框中转成全拼显示。
+  translator/preedit_format: []
