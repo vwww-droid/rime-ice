@@ -33,10 +33,11 @@ function M.func(input, seg, env)
     -- 日期
     if (input == M.date) then
         local current_time = os.time()
+        yield_cand(seg, os.date('%y%m%d', current_time))
+        yield_cand(seg, os.date('%Y%m%d', current_time))
         yield_cand(seg, os.date('%Y-%m-%d', current_time))
         yield_cand(seg, os.date('%Y/%m/%d', current_time))
         yield_cand(seg, os.date('%Y.%m.%d', current_time))
-        yield_cand(seg, os.date('%Y%m%d', current_time))
         yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0', '月'))
 
         -- 时间
@@ -72,6 +73,8 @@ function M.func(input, seg, env)
         local current_time = os.time()
         local week_tab = { '日', '一', '二', '三', '四', '五', '六' }
         local text = week_tab[tonumber(os.date('%w', current_time) + 1)]
+        yield_cand(seg, os.date('%G-%V', current_time))
+        yield_cand(seg, os.date('%G年第%V周', current_time))
         yield_cand(seg, '星期' .. text)
         yield_cand(seg, '礼拜' .. text)
         yield_cand(seg, '周' .. text)
